@@ -1,0 +1,7 @@
+1. First install node js as described here:
+	https://docs.npmjs.com/getting-started/installing-node
+2. Run following command in this directory
+	npm install 
+3. To Start run following command and go to http://localhost:3000 on your browser
+	npm start
+4. You should see the game pad and when button pressed text should indicate the button is pressed
