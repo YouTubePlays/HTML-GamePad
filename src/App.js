@@ -14,7 +14,11 @@ class App extends Component {
       upPressed:false,
       downPressed:false,
       leftPressed:false,
-      rightPressed:false
+      rightPressed:false,
+      lx:0,
+      ly:0,
+      rx:0,
+      ry:0
     }
   }
   render() {
@@ -42,6 +46,12 @@ class App extends Component {
         <p>
           {'RIGHT Button is ' + (this.state.rightPressed? 'pressed' : 'released')}
         </p>
+        <p>
+          {'Left  Joytick Postion ' + (this.state.lx +' , '+this.state.ly)}
+        </p>
+        <p>
+          {'Right  Joytick Postion ' + (this.state.rx +' , '+this.state.ry)}
+        </p>
         <Controller
             onBClicked={(event, down)=>this.setState({bPressed:down})}
             onAClicked={(event, down)=>this.setState({aPressed:down})}
@@ -49,6 +59,8 @@ class App extends Component {
             onDownClicked={(event, down)=>this.setState({downPressed:down})}
             onLeftClicked={(event, down)=>this.setState({leftPressed:down})}
             onRightClicked={(event, down)=>this.setState({rightPressed:down})}
+            onLeftJoyStick={(lx, ly)=>this.setState({lx:lx, ly:ly})}
+            onRightJoyStick={(rx, ry)=>this.setState({rx:rx, ry:ry})}
           />
       </div>
     );
