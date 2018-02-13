@@ -1,6 +1,32 @@
 .svg-fit {
-  width: 100%;
-  max-width: 640px;
+  float: left;
+  width: 15%;
+  height: auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  user-select:none;
+  -o-user-select:none;
+  touch-action: none;
+}
+
+.center {
+  text-align: center;
+}
+.full-width {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clear{
+  clear: both;
+}
+.view {
+  position:relative;
+  padding-top:38.25%;
+  float: left;
+  width: 70%;
+  height: auto;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select:none;
